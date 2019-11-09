@@ -506,12 +506,17 @@ ul.improvements > li:before {content: "\f00d";}
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	//border: 1px solid red;
     margin: 60px -60px;
 
-    > video, > img {
+    .text {
+    	width: 460px;
+    }
+
+    > video, > img, > iframe {
+
     	width: 100%;
     	max-width: 320px;
+    	height: 568.88px;
     	margin: 40px 80px 20px auto;
     	border-radius: 8px;
     	box-shadow: 0 14px 28px rgba(0,0,0,0.15);
@@ -521,7 +526,7 @@ ul.improvements > li:before {content: "\f00d";}
     	flex-direction: column;
     	margin: 60px 0;
 
-    	> video, > img {
+    	> video, > img, > iframe {
     		margin: 20px auto;
     	}
     }

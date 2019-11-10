@@ -14,6 +14,11 @@ body {
   margin: 0 auto;
   padding: 0 50px;
 }
+@media (max-width: 1023px) {
+  .wrapper {
+    padding: 30px;
+  }
+}
 .wrapper .back {
   display: block;
   width: 54px;
@@ -76,9 +81,19 @@ h1 {
   font-size: 3em;
   line-height: 1.4em;
 }
+@media (max-width: 1023px) {
+  h1 {
+    font-size: 2.6em;
+  }
+}
 h2 {
   font-size: 2.4em;
   line-height: 1.6em;
+}
+@media (max-width: 1023px) {
+  h2 {
+    font-size: 2em;
+  }
 }
 h3 {
   font-size: 1.6em;
@@ -176,6 +191,11 @@ blockquote {
   font-weight: 400;
   font-style: italic;
 }
+@media (max-width: 1023px) {
+  blockquote {
+    font-size: 1.4em;
+  }
+}
 blockquote.jtbd > u {
   text-decoration: none;
   background-color: rgba(99, 128, 150, 0.2);
@@ -265,7 +285,6 @@ footer ul {
   padding: 0;
   font-size: 1.4em;
   margin-top: 80px;
-  margin-bottom: -14px;
 }
 footer ul li {
   display: inline-block;
@@ -274,7 +293,7 @@ footer ul li {
 }
 footer ul li a {
   display: block;
-  padding: 12px;
+  padding: 2px 12px;
   color: #638096;
 }
 footer ul li a:hover {
@@ -453,11 +472,15 @@ ul.improvements > li:before {
 .row .text {
   width: 460px;
 }
+@media (max-width: 1023px) {
+  .row .text {
+    width: 100%;
+  }
+}
 .row > img,
 .row > iframe {
   width: 100%;
   max-width: 320px;
-  height: 568.88px;
   margin: 40px 80px 20px auto;
   border-radius: 8px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15);
@@ -485,8 +508,14 @@ ul.improvements > li:before {
   background-color: #2F3E4A;
   padding: 10px 20px;
   border-radius: 8px;
-  margin-top: 270px;
+  font-size: 1em;
+  margin: 0 20px;
   display: inline-block;
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .row > .video-container > .video-helper > p > i {
   opacity: .4;

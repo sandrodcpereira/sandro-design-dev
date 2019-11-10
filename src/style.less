@@ -31,6 +31,10 @@ html, body {
 	margin: 0 auto;
 	padding: 0 50px;
 
+	@media (max-width: 1023px) {
+		padding: 30px;
+    }
+
 	// back button
 
 	.back {
@@ -101,11 +105,19 @@ h1, h2, h3 {
 h1 {
 	font-size: 3em;
 	line-height: 1.4em;
+
+	@media (max-width: 1023px) {
+		font-size: 2.6em;
+    }
 }
 
 h2 {
 	font-size: 2.4em;
 	line-height: 1.6em;
+
+	@media (max-width: 1023px) {
+		font-size: 2em;
+    }
 }
 
 h3 {
@@ -220,6 +232,10 @@ blockquote {
 	font-weight: 400;
 	font-style: italic;
 
+	@media (max-width: 1023px) {
+		font-size: 1.4em;
+    }
+
 	&.jtbd > u {
 		text-decoration: none;
 		background-color: fade(@mid-grey, 20%);
@@ -330,7 +346,6 @@ footer {
 		padding: 0;
 		font-size: 1.4em;
 		margin-top: 80px;
-		margin-bottom: -14px;
 
 		li {
 			display: inline-block;
@@ -339,7 +354,7 @@ footer {
 			
 			a {
 				display: block;
-				padding: 12px;
+				padding: 2px 12px;
 				color: @mid-grey;
 
 				&:hover {
@@ -529,13 +544,17 @@ ul.improvements > li:before {content: "\f00d";}
 
     .text {
     	width: 460px;
+
+    	@media (max-width: 1023px) {
+			width: 100%;
+    	}
     }
 
     > img, > iframe {
 
     	width: 100%;
     	max-width: 320px;
-    	height: 568.88px;
+    	//height: 568.88px;
     	margin: 40px 80px 20px auto;
     	border-radius: 8px;
     	box-shadow: 0 14px 28px rgba(0,0,0,0.15);
@@ -564,8 +583,14 @@ ul.improvements > li:before {content: "\f00d";}
     			background-color: @dark-grey;
     			padding: 10px 20px;
     			border-radius: 8px;
-    			margin-top: 270px;
+    			font-size: 1em;
+    			margin: 0 20px;
     			display: inline-block;
+    			position: absolute;
+    			left: 10px;
+    			right: 10px;
+    			top: 50%;
+  				transform: translateY(-50%);
 
     			> i {
     				opacity: .4;

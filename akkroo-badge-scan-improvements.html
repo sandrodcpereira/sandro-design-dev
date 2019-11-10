@@ -15,6 +15,8 @@
 	<link rel="stylesheet" href="https://use.typekit.net/tpf3kji.css">
 	<script src="https://kit.fontawesome.com/266997c388.js"></script>
 	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
 </head>
 <body>
 
@@ -110,13 +112,17 @@
 
 			<div class="row">
 				
-				<!--img src="assets/temp/badge 3.png" alt=""-->
 
-				<video controls="true" autoplay loop muted playsinline poster="assets/temp/badge 2.png">
-				    <source type="video/mp4" src="assets/temp/demo badge 2.mp4">
-				    <!--img src="assets/temp/badge 2.png"-->
-				</video>
+				<div class="video-container">
+					<div class="video-helper">
+						<p><i class="fas fa-video"></i> Hover or tap to play video</p>
+					</div>
 
+					<video class="video" loop muted poster="assets/temp/badge 1.png">
+					    <source type="video/mp4" src="assets/temp/demo badge 2.mp4">
+					    <!--img src="assets/temp/badge 2.png"-->
+					</video>
+				</div>
 
 				<div class="text">
 					<h3>2. They have scanned the correct code</h3>
@@ -150,7 +156,7 @@
 				    
 				</video-->
 
-				<iframe src="https://xd.adobe.com/view/502eca61-19ef-4da8-79d6-7332f98e9b09-261f/?hints=off" frameborder="0"></iframe>
+				<!--iframe src="https://xd.adobe.com/view/502eca61-19ef-4da8-79d6-7332f98e9b09-261f/?hints=off" frameborder="0"></iframe-->
 
 				<div class="text">
 					<h3>Bonus: NFC badge support</h3>
@@ -204,6 +210,7 @@
 
 		<footer>
 			<hr>
+
 			<ul>
 				<li>
 					<a target="_blank" href="https://dribbble.com/sandrodcpereira">
@@ -241,12 +248,20 @@
 				</li>
 
 				<li>
-					<a target="_blank" href="https://giphy.com/channel/sandrodcpereira">
-						<i class="far fa-file"></i>
-						<!--svg></svg-->
-						<span>Giphy</span>
+					<a target="_blank" href="https://github.com/sandrodcpereira">
+						<i class="fab fa-github"></i>
+						<span>GitHub</span>
 					</a>
 				</li>
+
+
+				<!--li>
+					<a target="_blank" href="https://giphy.com/channel/sandrodcpereira">
+						<i class="far fa-file"></i>
+						<svg></svg>
+						<span>Giphy</span>
+					</a>
+				</li-->
 
 				<li>
 					<a href="mailto:hello@sandro.design">
@@ -256,9 +271,13 @@
 				</li>
 
 			</ul>
-			<p>© 2020 Sandro Pereira</p>
+
+			<p>©2019 • Website designed and coded by <span>Sandro Pereira</span></p>
+
 		</footer>
 
 	</div>
+
+	<script src="prod/script.js"></script>
 </body>
 </html>

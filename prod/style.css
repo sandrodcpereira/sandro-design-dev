@@ -303,10 +303,37 @@ footer ul li a span {
   transition: opacity 0.2s ease-out, top 0.2s ease-out;
 }
 footer p {
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
   font-size: .8em;
   color: #638096;
+}
+footer p > span {
+  color: #1B1BFF;
+  font-weight: 700;
+}
+footer p > span:hover {
+  animation: rainbow .8s infinite;
+}
+@keyframes rainbow {
+  0% {
+    color: #16a2bc;
+  }
+  20% {
+    color: #64b407;
+  }
+  40% {
+    color: #dc8d07;
+  }
+  60% {
+    color: #d91a05;
+  }
+  80% {
+    color: #a7016d;
+  }
+  100% {
+    color: #16a2bc;
+  }
 }
 ul.value,
 ul.improvements {
@@ -421,11 +448,11 @@ ul.improvements > li:before {
   flex-direction: row;
   align-items: center;
   margin: 60px -60px;
+  position: relative;
 }
 .row .text {
   width: 460px;
 }
-.row > video,
 .row > img,
 .row > iframe {
   width: 100%;
@@ -435,12 +462,51 @@ ul.improvements > li:before {
   border-radius: 8px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15);
 }
+.row > .video-container {
+  width: 100%;
+  max-width: 320px;
+  margin: 40px 80px 20px auto;
+  position: relative;
+}
+.row > .video-container > .video-helper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 8px;
+  transition: opacity .2s ease;
+}
+.row > .video-container > .video-helper > p {
+  background-color: #2F3E4A;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-top: 270px;
+  display: inline-block;
+}
+.row > .video-container > .video-helper > p > i {
+  opacity: .4;
+  margin-right: 6px;
+}
+.row > .video-container > .video-helper.playing {
+  opacity: 0;
+}
+.row > .video-container > video {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15);
+}
 @media (max-width: 1023px) {
   .row {
     flex-direction: column;
     margin: 60px 0;
   }
-  .row > video,
+  .row > .video-container,
   .row > img,
   .row > iframe {
     margin: 20px auto;

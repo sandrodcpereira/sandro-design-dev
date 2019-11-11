@@ -1,3 +1,12 @@
+// layout component loader
+
+$(function(){
+  $("header").load("../layout/header.html"); 
+  $("footer").load("../layout/footer.html"); 
+  $("#head").load("../layout/head.html"); 
+});
+
+
 // video play on hover
 
 $('video').mouseover(function(){

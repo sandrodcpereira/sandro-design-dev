@@ -2,35 +2,26 @@
 <html lang="en">
 <head>
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-20460092-3"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'UA-20460092-3');
-	</script>
-
-
 	<meta charset="UTF-8">
-	<title>Sandro Pereira — Product Designer</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 
 	<link rel="stylesheet" type="text/css" media="screen" href="prod/normalise.css">
 	<link rel="stylesheet" type="text/css" media="screen" href="prod/style.css">
-
-
 	<link rel="stylesheet" href="https://use.typekit.net/tpf3kji.css">
+
 	<script src="https://kit.fontawesome.com/266997c388.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="prod/script.js"></script>
+
+	<title>Sandro Pereira — Product Designer</title>	
 	
 </head>
 <body class="home">
 
 	<div class="wrapper">
 
-		<header>
+		<div class="header">
 			<a href="/" id="logo">
 				<svg viewBox="0 0 32 32" width="64px" height="60px">
 					<g>
@@ -54,7 +45,7 @@
 			<p>I've worked as a Product Designer in <abbr title="Business to Business">B2B</abbr> <abbr title="Software as a Service">SaaS</abbr> businesses for the past five years. Learn more <a href="about.html">about me</a> or read about my work experience <a href="#experience">below</a>:</p>
 
 			<a href="#experience" class="scroll-indicator"><i class="fas fa-angle-down"></i></a>
-		</header>
+		</div>
 	</div>
 
 	<div class="wrapper" id="experience">
@@ -136,75 +127,8 @@
 			</p>
 		</section>
 
-		<footer>
-			<hr>
-			<ul>
-				<li>
-					<a target="_blank" href="https://dribbble.com/sandrodcpereira">
-						<i class="fab fa-dribbble"></i>
-						<span>Dribbble</span>
-					</a>
-				</li>
-
-				<li>
-					<a target="_blank" href="https://twitter.com/sandrodcpereira">
-						<i class="fab fa-twitter"></i>
-						<span>Twitter</span>
-					</a>
-				</li>
-
-				<li>
-					<a target="_blank" href="https://www.instagram.com/sandrodcpereira">
-						<i class="fab fa-instagram"></i>
-						<span>Instagram</span>
-					</a>
-				</li>
-
-				<li>
-					<a target="_blank" href="https://www.linkedin.com/in/sandrodcpereira">
-						<i class="fab fa-linkedin"></i>
-						<span>LinkedIn</span>
-					</a>	
-				</li>
-
-				<li>
-					<a target="_blank" href="https://www.goodreads.com/sandrodcpereira">
-						<i class="fab fa-goodreads"></i>
-						<span>Goodreads</span>
-					</a>
-				</li>
-
-				<li>
-					<a target="_blank" href="https://giphy.com/channel/sandrodcpereira">
-						<i class="far fa-file"></i>
-						<!--svg></svg-->
-						<span>Giphy</span>
-					</a>
-				</li>
-
-				<li>
-					<a href="mailto:hello@sandro.design">
-						<i class="far fa-envelope"></i>
-						<span>Email</span>
-					</a>
-				</li>
-
-			</ul>
-			<p>© 2020 Sandro Pereira</p>
-		</footer>
+		<footer></footer>
 	</div>
 
-	<script>
-		// smooth scrolling
-		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-		    anchor.addEventListener('click', function (e) {
-		        e.preventDefault();
-
-		        document.querySelector(this.getAttribute('href')).scrollIntoView({
-		            behavior: 'smooth'
-		        });
-		    });
-		});
-	</script>
 </body>
 </html>

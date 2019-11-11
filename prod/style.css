@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 * {
   box-sizing: border-box;
 }
@@ -167,13 +170,6 @@ img.border {
   max-width: 800px;
   margin: 0 auto;
 }
-.card {
-  background-color: rgba(99, 128, 150, 0.1);
-  border-radius: 6px;
-  padding: 15px 40px;
-  font-size: .8em;
-  margin: 2em 0;
-}
 figcaption {
   display: block;
   font-size: .8em;
@@ -301,11 +297,11 @@ footer ul li a:hover {
 }
 footer ul li a:hover span {
   opacity: 1;
-  top: -6px;
+  top: -14px;
 }
 footer ul li a span {
   position: absolute;
-  top: -2px;
+  top: -12px;
   left: 50%;
   display: block;
   background-color: #2F3E4A;
@@ -394,7 +390,7 @@ ul.improvements > li:before {
   align-items: center;
   position: relative;
 }
-.home .wrapper:first-child header {
+.home .wrapper:first-child .header {
   text-align: left;
   max-width: 840px;
   margin: 0 auto;
@@ -402,13 +398,13 @@ ul.improvements > li:before {
   margin-bottom: 40px;
   padding: 0 50px;
 }
-.home .wrapper:first-child header p a {
+.home .wrapper:first-child .header p a {
   color: #EAEEF0;
 }
-.home .wrapper:first-child header p abbr[title] {
+.home .wrapper:first-child .header p abbr[title] {
   border-bottom: 1px dashed rgba(234, 238, 240, 0.25);
 }
-.home .wrapper:first-child header .scroll-indicator {
+.home .wrapper:first-child .header .scroll-indicator {
   position: absolute;
   bottom: 80px;
   left: 50%;
@@ -424,7 +420,7 @@ ul.improvements > li:before {
   opacity: .4;
   transition: opacity .5s ease;
 }
-.home .wrapper:first-child header .scroll-indicator:hover {
+.home .wrapper:first-child .header .scroll-indicator:hover {
   opacity: 1;
 }
 .motion .img-full {

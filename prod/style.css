@@ -328,26 +328,26 @@ footer p > span {
   font-weight: 700;
 }
 footer p > span:hover {
-  animation: rainbow .8s infinite;
+  animation: rainbow ease 1.5s infinite;
 }
 @keyframes rainbow {
   0% {
-    color: #16a2bc;
+    color: #0597D5;
   }
   20% {
-    color: #64b407;
+    color: #42DA43;
   }
   40% {
-    color: #dc8d07;
+    color: #EDD803;
   }
   60% {
-    color: #d91a05;
+    color: #FEA706;
   }
   80% {
-    color: #a7016d;
+    color: #EA2F83;
   }
   100% {
-    color: #16a2bc;
+    color: #0597D5;
   }
 }
 ul.value,
@@ -377,52 +377,68 @@ ul.improvements > li:before {
 .navigation a.next {
   float: right;
 }
-.home section ul {
-  margin-top: 40px;
+/*
+
+.home {
+	section {
+		ul {
+			margin-top: 40px;
+		}
+	}
+
+	.wrapper:first-child {
+		height: 100vh;
+		width: 100vw;
+		max-width: 100%;
+		background-color: @accent-color;
+		display: flex;
+  		justify-content: center;
+  		align-items: center;
+  		position: relative;
+
+		.header {
+			text-align: left;
+			max-width: @max-width;
+			margin: 0 auto;
+			color: @light-grey;
+			margin-bottom: 40px;
+			padding: 0 50px;
+
+			p {
+				a {
+					color: @light-grey;
+				}
+
+				abbr[title] {
+					border-bottom: 1px dashed fadeout(@light-grey, 75%);
+				}
+			}
+
+			.scroll-indicator {
+				position: absolute;
+				bottom: 80px;
+				left: 50%;
+				transform: translate(-50%, 0px);
+				display: block;
+				height: 60px;
+				width: 60px;
+				animation: scroll 3s infinite;
+				color: @pure-white;
+				font-size: 2.2em;
+				text-align: center;
+				line-height: 1.8em;
+				opacity: .4;
+				transition: opacity .5s ease;
+
+				&:hover {
+					opacity: 1;
+				}
+			}
+		}
+	}
 }
-.home .wrapper:first-child {
-  height: 100vh;
-  width: 100vw;
-  max-width: 100%;
-  background-color: #1B1BFF;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-.home .wrapper:first-child .header {
-  text-align: left;
-  max-width: 840px;
-  margin: 0 auto;
-  color: #EAEEF0;
-  margin-bottom: 40px;
-  padding: 0 50px;
-}
-.home .wrapper:first-child .header p a {
-  color: #EAEEF0;
-}
-.home .wrapper:first-child .header p abbr[title] {
-  border-bottom: 1px dashed rgba(234, 238, 240, 0.25);
-}
-.home .wrapper:first-child .header .scroll-indicator {
-  position: absolute;
-  bottom: 80px;
-  left: 50%;
-  transform: translate(-50%, 0px);
-  display: block;
-  height: 60px;
-  width: 60px;
-  animation: scroll 3s infinite;
-  color: #ffffff;
-  font-size: 2.2em;
-  text-align: center;
-  line-height: 1.8em;
-  opacity: .4;
-  transition: opacity .5s ease;
-}
-.home .wrapper:first-child .header .scroll-indicator:hover {
-  opacity: 1;
-}
+
+*/
 .motion .img-full {
   background-color: #6254e7;
 }
@@ -480,44 +496,33 @@ ul.improvements > li:before {
   border-radius: 8px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15);
 }
+.row > .video-container,
+.row .frame-container {
+  position: relative;
+}
+.row > .video-container > .helper,
+.row .frame-container > .helper {
+  position: absolute;
+  top: -18px;
+  left: -18px;
+  font-size: .8em;
+  color: #ffffff;
+  background-color: #2F3E4A;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+.row > .video-container > .helper > p,
+.row .frame-container > .helper > p {
+  margin: 0;
+}
+.row > .video-container > .helper > p > i,
+.row .frame-container > .helper > p > i {
+  margin-right: 4px;
+}
 .row > .video-container {
   width: 100%;
   max-width: 320px;
   margin: 40px 80px 20px auto;
-  position: relative;
-}
-.row > .video-container > .video-helper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  pointer-events: none;
-  text-align: center;
-  color: #ffffff;
-  border-radius: 8px;
-  transition: opacity .2s ease;
-}
-.row > .video-container > .video-helper > p {
-  background-color: #2F3E4A;
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-size: 1em;
-  margin: 0 20px;
-  display: inline-block;
-  position: absolute;
-  left: 10px;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.row > .video-container > .video-helper > p > i {
-  opacity: .4;
-  margin-right: 6px;
-}
-.row > .video-container > .video-helper.playing {
-  opacity: 0;
 }
 .row > .video-container > video {
   display: block;
@@ -531,14 +536,13 @@ ul.improvements > li:before {
   height: 568.88px;
   margin: 40px 80px 20px auto;
   position: relative;
-  overflow: hidden;
-  background-color: #2F3E4A;
   border-radius: 8px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15);
 }
 .row > .frame-container > iframe {
   width: 100%;
   height: 100%;
+  border-radius: 8px;
 }
 @media (max-width: 1023px) {
   .row {

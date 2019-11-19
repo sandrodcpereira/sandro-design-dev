@@ -30,7 +30,7 @@ body {
   position: fixed;
   top: 84px;
   margin-left: -62px;
-  color: rgba(99, 128, 150, 0.2);
+  color: rgba(99, 128, 150, 0.5);
   z-index: 999;
   text-align: center;
   line-height: 1.35em;

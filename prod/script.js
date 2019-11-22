@@ -5,6 +5,13 @@ $(function(){
   $("footer").load("layout/footer.html"); 
 });
 
+// load frames on click
+
+$("#frameon").click(function(){
+    var iframe = $("#myframe");
+    iframe.attr("src", iframe.data("src")); 
+});
+
 // video play on hover
 
 /*

@@ -156,8 +156,8 @@ p {
 
 		&:before {
 			font-family: "Font Awesome 5 Pro";
-		  	content: "\f05a";
 		  	font-weight: 900;
+		  	content: "\f05a";
 		  	opacity: 1;
 		  	color: @mid-grey;
 		  	font-size: 1.2em;
@@ -171,6 +171,33 @@ p {
 		    left: 22px;
 		}
 	}
+
+	&.prototype-instructions {
+		font-size: 1em;
+		padding: 15px 25px 15px 52px;
+		border-radius: 6px;
+		background-color: fadeout(@accent-color, 95%);
+		position: relative;
+
+		&:before {
+			font-family: "Font Awesome 5 Pro";
+		  	font-weight: 900;
+		  	content: "\f25a";
+		  	opacity: 1;
+		  	color: @mid-grey;
+		  	font-size: 1.2em;
+		 	-webkit-font-smoothing: antialiased;
+		    font-style: normal;
+		    font-variant: normal;
+		    text-rendering: auto;
+
+		    position: absolute;
+		    top: 15px;
+		    left: 22px;
+		}
+	}
+
+
 }
 
 img {

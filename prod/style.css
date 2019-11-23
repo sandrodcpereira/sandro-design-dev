@@ -16,48 +16,66 @@ body {
   max-width: 840px;
   margin: 0 auto;
   padding: 0 50px;
+  position: relative;
 }
 @media (max-width: 1023px) {
   .wrapper {
     padding: 40px;
   }
 }
-.wrapper .back {
-  display: block;
-  width: 54px;
-  height: 54px;
-  font-size: 2.4em;
+.wrapper nav {
   position: fixed;
-  top: 84px;
-  margin-left: -62px;
-  color: rgba(99, 128, 150, 0.5);
-  z-index: 999;
-  text-align: center;
-  line-height: 1.35em;
-}
-.wrapper .back > span {
-  opacity: 0;
-  display: block;
-  background-color: #2F3E4A;
-  padding: 5px 8px;
-  border-radius: 6px;
-  font-size: .4em;
-  font-weight: 700;
-  color: #EAEEF0;
-  text-transform: uppercase;
-  position: absolute;
-  top: 12px;
-  right: -45px;
-  pointer-events: none;
-  line-height: 1.2em;
-  transition: opacity 0.2s ease-out, right 0.2s ease-out;
-}
-.wrapper .back:hover {
-  color: #2F3E4A;
-}
-.wrapper .back:hover > span {
+  left: 0;
+  top: 0;
+  z-index: 9;
+  font-size: .5em;
   opacity: 1;
-  right: -50px;
+  overflow-x: scroll;
+  height: 100%;
+}
+.wrapper nav #navigation {
+  padding: 20px 40px 20px 20px;
+}
+.wrapper nav ul {
+  list-style-type: none !important;
+  padding: 0 0 0 10px;
+  padding-inline-start: 10px;
+}
+.wrapper nav ul p,
+.wrapper nav ul h3 {
+  display: inline-block;
+  margin: 2px;
+  opacity: .2;
+  letter-spacing: -4px;
+  transition: letter-spacing 0.1s ease-out;
+  color: transparent;
+  background-image: url('../assets/generic/nav-hidden.png');
+  background-repeat: repeat-x;
+  background-position: center center;
+  background-size: 10px;
+}
+.wrapper nav ul p a,
+.wrapper nav ul h3 a {
+  color: transparent;
+}
+.wrapper nav ul h3 {
+  font-size: 1.4em;
+  margin: 16px 2px 2px 2px;
+}
+.wrapper nav:hover {
+  background-color: #EAEEF0;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15);
+}
+.wrapper nav:hover p,
+.wrapper nav:hover h3 {
+  color: #2F3E4A;
+  opacity: .8;
+  background-image: none;
+  letter-spacing: 0px;
+}
+.wrapper nav:hover p a,
+.wrapper nav:hover h3 a {
+  color: #2F3E4A;
 }
 section,
 header {

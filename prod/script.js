@@ -8,9 +8,20 @@ $(function(){
 
 // load frames on click
 
-$("#frameon").click(function(){
-    var iframe = $("#myframe");
-    iframe.attr("src", iframe.data("src")); 
+$(function(){
+    var current = location.pathname;
+    $('nav a').each(function(){
+        var $this = $(this);
+        // if the current path is like this link, make it active
+        if($this.attr('href').indexOf(current) !== -1){
+            $this.addClass('active');
+        }
+    })
+})
+
+$(function(){
+	var pathname = window.location.pathname; // Returns path only (/path/example.html)
+	console.log(pathname, "Hello, world!");
 });
 
 // video play on hover

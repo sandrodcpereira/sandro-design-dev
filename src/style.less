@@ -58,6 +58,11 @@ html, body {
 
     	}
 
+    	i {
+    		font-size: 1.8em;
+    		text-decoration: underline;
+    	}
+
 		ul {
 			list-style-type: none !important;
 			padding: 0 0 0 10px;
@@ -97,6 +102,11 @@ html, body {
 
 				a {
 					color: @dark-grey;
+
+					&.active {
+						color: @accent-color;
+						font-weight: bold;
+					}
 				}
 			}
 

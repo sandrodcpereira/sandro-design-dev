@@ -9,26 +9,13 @@ $(function(){
 
 // open menu mobile
 
-$(document).on('click', '#menu-toggle, :not(nav)', function() {
+$(document).on('click', '#menu-toggle', function() {
 	$('nav').toggleClass("open");
+	$('#menu-toggle').toggleClass("open");
 	console.log('wtf man');
 });
 
 // active menu item
-
-/* $(function(){
-		var current = location.pathname;
-		$('nav a').each(function(){
-				var $this = $(this);
-				// if the current path is like this link, make it active
-				if($this.attr('href').indexOf(current) !== -1){
-						$this.addClass('active');
-				}
-		})
-}) */
-
-
-
 
 $(function(){
 	var pathname = window.location.pathname; // Returns path only (/path/example.html)

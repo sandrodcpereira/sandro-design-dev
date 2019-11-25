@@ -6,7 +6,6 @@ $(function(){
 	$("nav").load("layout/nav.html"); 
 });
 
-
 // open menu mobile
 
 $(document).on('click', '#menu-toggle', function() {
@@ -21,6 +20,9 @@ $(function(){
 	var pathname = window.location.pathname; // Returns path only (/path/example.html)
 	console.log(pathname, "Hello, world!");
 });
+
+
+
 
 
 

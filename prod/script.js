@@ -1,16 +1,30 @@
 // layout component loader
 
 $(function(){
-  $("header").load("layout/header.html"); 
-  $("footer").load("layout/footer.html"); 
+	$("header").load("layout/header.html"); 
+	$("footer").load("layout/footer.html"); 
+	$("nav").load("layout/nav.html"); 
 });
 
-// load frames on click
+// open menu mobile
 
-$("#frameon").click(function(){
-    var iframe = $("#myframe");
-    iframe.attr("src", iframe.data("src")); 
+$(document).on('click', '#menu-toggle', function() {
+	$('nav').toggleClass("open");
+	$('#menu-toggle').toggleClass("open");
+	console.log('wtf man');
 });
+
+// active menu item
+
+$(function(){
+	var pathname = window.location.pathname; // Returns path only (/path/example.html)
+	console.log(pathname, "Hello, world!");
+});
+
+
+
+
+
 
 // video play on hover
 

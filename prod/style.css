@@ -90,6 +90,10 @@ body {
     color: #1B1BFF;
     font-weight: bold;
   }
+  .wrapper nav:hover p a:hover,
+  .wrapper nav:hover h3 a:hover {
+    color: #1B1BFF;
+  }
 }
 @media (max-width: 1023px) {
   .wrapper nav {

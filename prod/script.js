@@ -14,12 +14,6 @@ $(document).on('click', '#menu-toggle', function() {
 	console.log('wtf man');
 });
 
-// active menu item
-
-$(function(){
-	var pathname = window.location.pathname; // Returns path only (/path/example.html)
-	console.log(pathname, "Hello, world!");
-});
 
 
 

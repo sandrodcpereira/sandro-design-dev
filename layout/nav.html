@@ -76,11 +76,6 @@
 	
 // active menu item
 
-$(function(){
-	var pathname = window.location.pathname; // Returns path only (/path/example.html)
-	console.log(pathname, "Hello, world!");
-});
-
 $('nav a').filter(function(){
   return this.href === location.href;
 }).addClass('active');

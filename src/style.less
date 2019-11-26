@@ -15,12 +15,10 @@
 
 html {
   scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
 }
 
-* {
-	box-sizing: border-box;
-	//border: 1px solid red;
-}
+* {box-sizing: border-box;}
 
 html, body {
 	width: 100%;
@@ -36,12 +34,11 @@ html, body {
 	padding: 0 50px;
 	position: relative;
 
-
 	@media (max-width: 1023px) {
 		padding: 40px;
     }
 
-	// new nav experiement
+	// navigation
 
 	nav {
 		position: fixed;
@@ -70,8 +67,8 @@ html, body {
 		p, h3 {
 			display: inline-block;
 			margin: 2px;
-			opacity: .2;
-			letter-spacing: -3px;
+			opacity: .1;
+			letter-spacing: -2px;
 			transition: letter-spacing 0.1s ease-out;
 			color: transparent;
 			background-image: url('../assets/generic/nav-hidden.png');
@@ -86,7 +83,6 @@ html, body {
 			font-size: 1.4em;
 			margin: 16px 2px 2px 2px;
 		}
-
 		
 		@media (min-width: 1023px) {
 			&:hover {	
@@ -108,9 +104,7 @@ html, body {
 							font-weight: bold;
 						}
 						
-						&:hover {
-							color: @accent-color;
-						}
+						&:hover {color: @accent-color;}
 					}
 				}
 			}
@@ -125,9 +119,7 @@ html, body {
 				position: fixed;
 				top: 127px;
 				left: -3px;
-    			//border: 1px solid red;
     			padding: 10px 14px 8px 14px;
-    			opacity: 1;
     			background-color: @light-grey;
     			border-radius: 0 8px 8px 0;
     			transition: left .2s ease-out;
@@ -261,7 +253,6 @@ p {
 		    font-style: normal;
 		    font-variant: normal;
 		    text-rendering: auto;
-
 		    position: absolute;
 		    top: 15px;
 		    left: 22px;
@@ -286,14 +277,11 @@ p {
 		    font-style: normal;
 		    font-variant: normal;
 		    text-rendering: auto;
-
 		    position: absolute;
 		    top: 15px;
 		    left: 22px;
 		}
 	}
-
-
 }
 
 img {
@@ -519,13 +507,14 @@ footer {
 			color: @accent-color;
 			font-weight: 700;
 			
-			&:hover {
-				animation: rainbow ease 1.5s infinite;
-			}
+			//&:hover {
+			//	animation: rainbow ease 1.5s infinite;
+			//}
 		}
 	}
 }
 
+/*
 @keyframes rainbow {
   0%  {color: #0597D5;}
   20% {color: #42DA43;}
@@ -533,7 +522,7 @@ footer {
   60% {color: #FEA706;}
   80% {color: #EA2F83;}
   100%{color: #0597D5;}
-}
+}*/
 
 // value & room for improvement lists
 
@@ -541,30 +530,20 @@ ul.value, ul.improvements {
 	list-style: none;
 
 	li:before {
-  		font-family: FontAwesome;
 		display: inline-block;
 		margin-left: -1.5em;
   		width: 1.5em; 
+  		font-family: "Font Awesome 5 Pro";
+	  	font-weight: 900;
+	 	-webkit-font-smoothing: antialiased;
+	    font-style: normal;
+	    font-variant: normal;
+	    text-rendering: auto;
 	}
 }
 
 ul.value > li:before {content: "\f00c";}
 ul.improvements > li:before {content: "\f00d";}
-
-// article navigation (previous & next) ---- needs to be reviewed
-
-.navigation {
-	display: block;
-	overflow: auto;
-
-	a {
-		display: inline-block; 
-
-		&.next {
-			float: right;
-		}
-	}
-}
 
 // page specific styles
 
@@ -627,9 +606,7 @@ ul.improvements > li:before {content: "\f00d";}
 			}
 		}
 	}
-}
-
-*/
+}*/
 
 .motion .img-full {background-color: #6254e7;}
 .illustration .img-full {background-color: #fe5b60;}
@@ -657,7 +634,7 @@ ul.improvements > li:before {content: "\f00d";}
   }
 }
 
-// layout test, side by side pic and text
+// side by side pic and text
 
 .row {
 	display: flex;
@@ -675,7 +652,6 @@ ul.improvements > li:before {content: "\f00d";}
     }
 
     > img {
-
     	width: 100%;
     	max-width: 320px;
     	margin: 40px 80px 20px auto;

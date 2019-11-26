@@ -11,12 +11,14 @@ $(function(){
 $(document).on('click', '#menu-toggle', function() {
 	$('nav').toggleClass("open");
 	$('#menu-toggle').toggleClass("open");
-	console.log('wtf man');
+
+	if ($("nav").hasClass("open")) {
+		$(':not(nav)').click(function(){
+			$('nav').removeClass("open");
+			$('#menu-toggle').removeClass("open");
+		});
+	}
 });
-
-
-
-
 
 
 
@@ -32,6 +34,7 @@ $('video').mouseout(function(){
 	$(this).get(0).pause();
 	$('.video-helper').removeClass('playing');
 });
+
 
 // video play on click, for mobile
 

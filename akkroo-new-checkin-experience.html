@@ -25,109 +25,111 @@
 
 		<nav></nav>
 
-		<section>
-			<h4>Q4 2018</h4>
-			<h1>New Check-in Experience in the Akkroo App</h1>
-		</section>
+		<main>
+			<section>
+				<h4>Q4 2018</h4>
+				<h1>New Check-in Experience in the Akkroo App</h1>
+			</section>
 
-		<section>
+			<section>
 
-			<div class="img-full akkroo">
-				<img src="assets/akkroo/hero-akkroo-checkin@2x.png" alt="Two devices showing the user inteface for check-in events in the Akkroo app">
-			</div>
-
-			<h2>Context</h2>
-
-			<p>The check-in functionality of the Akkroo product allows users to upload a list of leads and accounts they expect to meet at a trade show, empowering them to leverage information they may already have on important prospects and potentially making it easy to close the sale.</p>
-
-			<p>In the early stages of planning to deliver the <a href="akkroo-react-native-app.html"></a>, we decided that the existing check-in experience was not up to the standard that we were hoping to offer, so we were going to tackle it as a separate project after the launch of the new app.</p>
-
-			<p>The biggest issue of the existing experience was that it catered mostly to a <abbr title="Business to Customer">B2C</abbr> use case, a market that Akkroo was no longer after.</p>
-
-
-		</section>
-
-		<section>
-			
-			<h2>Problem</h2>
-
-			<p>We framed this project around the user persona of the Sales Representative, who is the typical user of the Akkroo app.</p> 
-
-			<p>Using the <a href="https://www.intercom.com/books/jobs-to-be-done" target="_blank">Jobs to Be Done</a> framework, we arrived at the following goal:</p>
-
-			<blockquote class="jtbd">As <u>Serena Sales</u>, I want to be able to <u>access a list of attendees in the app</u> in order to <u>leverage existing information and measure attendance rate</u>.</blockquote>
-
-		</section>
-
-		<section>
-			
-			<h2>Discovery and ideation</h2>
-
-			<p>Our main goal was to completely rethink the user flow for these types of events — it needed not just to work for our <abbr title="Ideal Customer Profile">ICP</abbr> customers, but also to provide enough value to get them to give it a try in favour of the basic lead capture type of event.</p>
-
-			<p class="info">At this time, check-in type events hovered around 10% of all events in Akkroo, with basic lead capture type making up the remaining 90%.</p>
-
-			<p>We also knew from the beginning of this project that this was a special one: the solution we came up to lookup attendees would eventually power the ability for our users to tap into their <abbr title="Customer Relationship Management">CRM</abbr> and <abbr title="Marketing Automation">MA</abbr> databases — or potentially any other source.</p>
-
-			<p>When looking at the user flow, we aimed to remove points of stress for the user — instances where they were forced to make a decision despite not having the information required to do so.</p>
-
-			<img src="assets/generic/placeholder.png" alt="">
-			<figcaption>The old check-in experience user flow.</figcaption>
-
-			<p>One of these instances was when the app asked the users whether the person they were speaking to was on the list of attendees. It’s simply unreasonable to expect app users to remember a list of all the attendees at an event, and they ended up understandably frustrated.</p>
-
-			<div class="row">
-
-				<img src="assets/temp/checkin 2.png" alt="The check-in UI in the Akkroo app after a user has typed the name of a person, showing some results and a prompt to add a new record">
-				
-				<div class="text">
-					<p>The solution was to have the user type the name (or email) of the person they’re speaking to and then present them the relevant action: create a new lead if the name is not on the list, show them the existing profile if it is.</p>
-
-					<p>By presenting these prompts in a smart way, we're helping the user do their job without getting in the way.</p>
+				<div class="img-full akkroo">
+					<img src="assets/akkroo/hero-akkroo-checkin@2x.png" alt="Two devices showing the user inteface for check-in events in the Akkroo app">
 				</div>
 
-			</div>
+				<h2>Context</h2>
+
+				<p>The check-in functionality of the Akkroo product allows users to upload a list of leads and accounts they expect to meet at a trade show, empowering them to leverage information they may already have on important prospects and potentially making it easy to close the sale.</p>
+
+				<p>In the early stages of planning to deliver the <a href="akkroo-react-native-app.html"></a>, we decided that the existing check-in experience was not up to the standard that we were hoping to offer, so we were going to tackle it as a separate project after the launch of the new app.</p>
+
+				<p>The biggest issue of the existing experience was that it catered mostly to a <abbr title="Business to Customer">B2C</abbr> use case, a market that Akkroo was no longer after.</p>
 
 
-			<div class="row">
+			</section>
 
-				<img src="assets/temp/checkin 3.png" alt="The check-in UI in the Akkroo app showing different states in the guest list: some that can be checked-in, others that would need some more information collected">
+			<section>
 				
-				<div class="text">
-					<p>The same applies to the actions you can perform with your attendees. If, for instance, the user is required to collect additional data before they’re able to check a lead in, they’re only presented with the option to proceed to the data collection form. </p>
+				<h2>Problem</h2>
+
+				<p>We framed this project around the user persona of the Sales Representative, who is the typical user of the Akkroo app.</p> 
+
+				<p>Using the <a href="https://www.intercom.com/books/jobs-to-be-done" target="_blank">Jobs to Be Done</a> framework, we arrived at the following goal:</p>
+
+				<blockquote class="jtbd">As <u>Serena Sales</u>, I want to be able to <u>access a list of attendees in the app</u> in order to <u>leverage existing information and measure attendance rate</u>.</blockquote>
+
+			</section>
+
+			<section>
+				
+				<h2>Discovery and ideation</h2>
+
+				<p>Our main goal was to completely rethink the user flow for these types of events — it needed not just to work for our <abbr title="Ideal Customer Profile">ICP</abbr> customers, but also to provide enough value to get them to give it a try in favour of the basic lead capture type of event.</p>
+
+				<p class="info">At this time, check-in type events hovered around 10% of all events in Akkroo, with basic lead capture type making up the remaining 90%.</p>
+
+				<p>We also knew from the beginning of this project that this was a special one: the solution we came up to lookup attendees would eventually power the ability for our users to tap into their <abbr title="Customer Relationship Management">CRM</abbr> and <abbr title="Marketing Automation">MA</abbr> databases — or potentially any other source.</p>
+
+				<p>When looking at the user flow, we aimed to remove points of stress for the user — instances where they were forced to make a decision despite not having the information required to do so.</p>
+
+				<img src="assets/generic/placeholder.png" alt="">
+				<figcaption>The old check-in experience user flow.</figcaption>
+
+				<p>One of these instances was when the app asked the users whether the person they were speaking to was on the list of attendees. It’s simply unreasonable to expect app users to remember a list of all the attendees at an event, and they ended up understandably frustrated.</p>
+
+				<div class="row">
+
+					<img src="assets/temp/checkin 2.png" alt="The check-in UI in the Akkroo app after a user has typed the name of a person, showing some results and a prompt to add a new record">
+					
+					<div class="text">
+						<p>The solution was to have the user type the name (or email) of the person they’re speaking to and then present them the relevant action: create a new lead if the name is not on the list, show them the existing profile if it is.</p>
+
+						<p>By presenting these prompts in a smart way, we're helping the user do their job without getting in the way.</p>
+					</div>
 
 				</div>
 
-			</div>
+
+				<div class="row">
+
+					<img src="assets/temp/checkin 3.png" alt="The check-in UI in the Akkroo app showing different states in the guest list: some that can be checked-in, others that would need some more information collected">
+					
+					<div class="text">
+						<p>The same applies to the actions you can perform with your attendees. If, for instance, the user is required to collect additional data before they’re able to check a lead in, they’re only presented with the option to proceed to the data collection form. </p>
+
+					</div>
+
+				</div>
+				
+			</section>
+
+			<section>
+				
+				<h2>Feedback sessions</h2>
+
+				<p>Because this feature was completely new in the way that it mixed the ability to check attendees in,  review existing information and capture new information, we worked very closely with some of our customers and have improved this functionality over many months.</p>
+
+				<p>The initial user flow was not the fastest, but it was deliberately designed in a way that helped the users paint a clear mental map of the new functionality. As they grew accustomed to the new user flow, they started asking for quicker ways to navigate it — we obliged by simplifying it and offering shortcuts for the power users.</p>
+
+			</section>
 			
-		</section>
+			<section>
+				<h2>Outcome</h2>
 
-		<section>
-			
-			<h2>Feedback sessions</h2>
+				<p>Getting to rethink a traditional lead capture user flow from the ground up by adding multiple sources of information (starting with the list of attendees, but eventually extending to others), merging collection of data with data lookup in a seamless way, and doing it in a way that is easy even for non-tech-savvy people to use was very challenging, but ultimately very gratifying.</p>
 
-			<p>Because this feature was completely new in the way that it mixed the ability to check attendees in,  review existing information and capture new information, we worked very closely with some of our customers and have improved this functionality over many months.</p>
+				<p>In the end, we turned a feature that could have been deprecated into an experience that is aligned with our ultimate goal for the product. All that was achieved by working closely with our customers, gathering tonnes of feedback, and continuous iteration.</p>
 
-			<p>The initial user flow was not the fastest, but it was deliberately designed in a way that helped the users paint a clear mental map of the new functionality. As they grew accustomed to the new user flow, they started asking for quicker ways to navigate it — we obliged by simplifying it and offering shortcuts for the power users.</p>
+				<p><b>Value added:</b></p>
 
-		</section>
-		
-		<section>
-			<h2>Outcome</h2>
-
-			<p>Getting to rethink a traditional lead capture user flow from the ground up by adding multiple sources of information (starting with the list of attendees, but eventually extending to others), merging collection of data with data lookup in a seamless way, and doing it in a way that is easy even for non-tech-savvy people to use was very challenging, but ultimately very gratifying.</p>
-
-			<p>In the end, we turned a feature that could have been deprecated into an experience that is aligned with our ultimate goal for the product. All that was achieved by working closely with our customers, gathering tonnes of feedback, and continuous iteration.</p>
-
-			<p><b>Value added:</b></p>
-
-			<ul class="value">
-				<li>Better experience that is more aligned with the market that Akkroo is catering to.</li>
-				<li>Future-proof user flow that can surface information from any kind of source.</li>
-				<li>There was an increase in usage of check-in events.</li>
-			</ul>
-			
-		</section>
+				<ul class="value">
+					<li>Better experience that is more aligned with the market that Akkroo is catering to.</li>
+					<li>Future-proof user flow that can surface information from any kind of source.</li>
+					<li>There was an increase in usage of check-in events.</li>
+				</ul>
+				
+			</section>
+		</main>
 
 		<footer></footer>
 

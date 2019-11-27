@@ -510,8 +510,28 @@ footer {
 			//&:hover {
 			//	animation: rainbow ease 1.5s infinite;
 			//}
+
+			.sandro-peeking {
+				display: block;
+				width: 60px;
+				position: fixed;
+				left: 50%;
+				bottom: -60px;
+			    transform: translateX(-50%);
+				padding: 0;
+				margin: 0;
+				transition: bottom .2s cubic-bezier(0.42,-0.01, 0.15, 1.45);
+			}
+
+			&:hover {
+				.sandro-peeking {
+					bottom: -7px;
+				}
+			}
 		}
 	}
+
+	
 }
 
 /*

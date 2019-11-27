@@ -520,13 +520,24 @@ footer {
 			    transform: translateX(-50%);
 				padding: 0;
 				margin: 0;
-				transition: bottom .2s cubic-bezier(0.42,-0.01, 0.15, 1.45);
+				transition: bottom .3s cubic-bezier(0.42,-0.01, 0.15, 1.45) .4s;
+			}
+
+			.sandro-peeking-hands {
+				display: block;
+				width: 170px;
+				position: fixed;
+				left: 50%;
+				bottom: -60px;
+			    transform: translateX(-50%);
+				padding: 0;
+				margin: 0;
+				transition: bottom .2s ease-out;
 			}
 
 			&:hover {
-				.sandro-peeking {
-					bottom: -7px;
-				}
+				.sandro-peeking {bottom: -7px;}
+				.sandro-peeking-hands {bottom: -2px;}
 			}
 		}
 	}

@@ -6,21 +6,20 @@ $(function(){
 	$("nav").load("layout/nav.html"); 
 });
 
+// hide play prototype button when clicked
+
+$(function(){
+	$('.play-trigger').click(function(){
+		$(this).fadeOut();
+	});
+});
+
 // open menu mobile
 
 $(document).on('click', '#menu-toggle', function() {
 	$('nav').toggleClass("open");
 	$('#menu-toggle').toggleClass("open");
-
-	if ($("nav").hasClass("open")) {
-		$(':not(nav)').click(function(){
-			$('nav').removeClass("open");
-			$('#menu-toggle').removeClass("open");
-		});
-	}
 });
-
-
 
 // video play on hover
 

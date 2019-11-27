@@ -613,6 +613,19 @@ ul.improvements > li:before {
 .row .frame-container > .helper > p > i {
   margin-right: 4px;
 }
+.row > .video-container > .play-trigger,
+.row .frame-container > .play-trigger {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 6em;
+  color: #638096;
+  text-align: center;
+  width: 100%;
+  padding: 120px 0;
+  display: block;
+}
 .row > .video-container {
   width: 100%;
   max-width: 320px;

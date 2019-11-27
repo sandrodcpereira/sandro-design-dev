@@ -81,4 +81,13 @@ $('nav a').filter(function(){
 }).addClass('active');
 
 
+// mobile menu open and close
+
+$(function(){
+	$('#menu-toggle').click(function(){
+		$('nav').toggleClass("open");
+		$('#menu-toggle').toggleClass("open");
+	});
+});
+
 </script>

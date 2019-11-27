@@ -14,13 +14,6 @@ $(function(){
 	});
 });
 
-// open menu mobile
-
-$(document).on('click', '#menu-toggle', function() {
-	$('nav').toggleClass("open");
-	$('#menu-toggle').toggleClass("open");
-});
-
 // video play on hover
 
 /*

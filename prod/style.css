@@ -368,7 +368,7 @@ p > a[target="_blank"]:hover:after {
   color: #ffffff;
   font-size: .6em;
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 1px;
   padding: 1px 5px 1px 4px;
   margin-left: 4px;
@@ -678,6 +678,24 @@ ul.improvements > li:before {
   width: 100%;
   height: 100%;
   border-radius: 8px;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.row > .frame-container > iframe[name="prototypeSyncingEvents"] {
+  background-image: url('../assets/akkroo/preview - sync.png');
+}
+.row > .frame-container > iframe[name="prototypeRecordStarring"] {
+  background-image: url('../assets/akkroo/preview - sync.png');
+}
+.row > .frame-container > iframe[name="prototypeHighFive"] {
+  background-image: url('../assets/akkroo/preview - highfive.png');
+}
+.row > .frame-container > iframe[name="prototypeOnboarding"] {
+  background-image: url('../assets/akkroo/preview - onboarding.png');
+}
+.row > .frame-container > iframe[name="prototypeUserFeedback"] {
+  background-image: url('../assets/akkroo/preview - feedback.png');
 }
 @media (max-width: 1023px) {
   .row {

@@ -669,19 +669,19 @@ ul.improvements > li:before {
   background-repeat: no-repeat;
 }
 .row > .frame-container > iframe[name="prototypeSyncingEvents"] {
-  background-image: url('../assets/akkroo/preview - sync.png');
+  background-image: url('../assets/akkroo/preview-sync.png');
 }
 .row > .frame-container > iframe[name="prototypeRecordStarring"] {
-  background-image: url('../assets/akkroo/preview - sync.png');
+  background-image: url('../assets/akkroo/preview-sync.png');
 }
 .row > .frame-container > iframe[name="prototypeHighFive"] {
-  background-image: url('../assets/akkroo/preview - highfive.png');
+  background-image: url('../assets/akkroo/preview-highfive.png');
 }
 .row > .frame-container > iframe[name="prototypeOnboarding"] {
-  background-image: url('../assets/akkroo/preview - onboarding.png');
+  background-image: url('../assets/akkroo/preview-onboarding.png');
 }
 .row > .frame-container > iframe[name="prototypeUserFeedback"] {
-  background-image: url('../assets/akkroo/preview - feedback.png');
+  background-image: url('../assets/akkroo/preview-feedback.png');
 }
 @media (max-width: 1023px) {
   .row {

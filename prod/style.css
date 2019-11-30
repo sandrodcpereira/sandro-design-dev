@@ -107,13 +107,35 @@ body {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15);
     left: -300px;
     transition: left 0.2s ease-out;
-    font-size: 0.6em;
+    font-size: .6em;
+  }
+  .wrapper nav.open {
+    left: 0;
   }
   .wrapper nav .nav-container {
     display: block;
   }
-  .wrapper nav #menu-toggle {
+  .wrapper nav .nav-container p,
+  .wrapper nav .nav-container h3 {
+    color: #2F3E4A;
+    opacity: .8;
+    background-image: none;
+    letter-spacing: 0px;
+    padding: 6px 0;
+  }
+  .wrapper nav .nav-container p a,
+  .wrapper nav .nav-container h3 a {
+    color: #2F3E4A;
+    padding: 6px 0;
+  }
+  .wrapper nav .nav-container p a.active,
+  .wrapper nav .nav-container h3 a.active {
+    color: #1B1BFF;
+    font-weight: bold;
+  }
+  .wrapper nav .nav-container #menu-toggle {
     display: block;
+    width: 38px;
     position: fixed;
     top: 127px;
     left: -3px;
@@ -123,37 +145,16 @@ body {
     transition: left 0.2s ease-out;
     opacity: .5;
   }
-  .wrapper nav #menu-toggle i {
+  .wrapper nav .nav-container #menu-toggle i {
     pointer-events: none;
     font-size: 2.4em;
   }
-  .wrapper nav #menu-toggle.open {
+  .wrapper nav .nav-container #menu-toggle.open {
     left: 234px;
     opacity: 1;
   }
-  .wrapper nav #menu-toggle.open > i {
+  .wrapper nav .nav-container #menu-toggle.open > i {
     transform: rotate(180deg);
-  }
-  .wrapper nav.open {
-    left: 0;
-  }
-  .wrapper nav p,
-  .wrapper nav h3 {
-    color: #2F3E4A;
-    opacity: .8;
-    background-image: none;
-    letter-spacing: 0px;
-    padding: 6px 0;
-  }
-  .wrapper nav p a,
-  .wrapper nav h3 a {
-    color: #2F3E4A;
-    padding: 6px 0;
-  }
-  .wrapper nav p a.active,
-  .wrapper nav h3 a.active {
-    color: #1B1BFF;
-    font-weight: bold;
   }
 }
 section,
@@ -448,6 +449,7 @@ footer p {
 footer p > span {
   color: #1B1BFF;
   font-weight: 700;
+  cursor: help;
 }
 footer p > span .sandro-peeking {
   display: block;
@@ -499,66 +501,52 @@ ul.value > li:before {
 ul.improvements > li:before {
   content: "\f00d";
 }
-/*
-
-.home {
-	section {
-		ul {
-			margin-top: 40px;
-		}
-	}
-
-	.wrapper:first-child {
-		height: 100vh;
-		width: 100vw;
-		max-width: 100%;
-		background-color: @accent-color;
-		display: flex;
-  		justify-content: center;
-  		align-items: center;
-  		position: relative;
-
-		.header {
-			text-align: left;
-			max-width: @max-width;
-			margin: 0 auto;
-			color: @light-grey;
-			margin-bottom: 40px;
-			padding: 0 50px;
-
-			p {
-				a {
-					color: @light-grey;
-				}
-
-				abbr[title] {
-					border-bottom: 1px dashed fadeout(@light-grey, 75%);
-				}
-			}
-
-			.scroll-indicator {
-				position: absolute;
-				bottom: 80px;
-				left: 50%;
-				transform: translate(-50%, 0px);
-				display: block;
-				height: 60px;
-				width: 60px;
-				animation: scroll 3s infinite;
-				color: @pure-white;
-				font-size: 2.2em;
-				text-align: center;
-				line-height: 1.8em;
-				opacity: .4;
-				transition: opacity .5s ease;
-
-				&:hover {
-					opacity: 1;
-				}
-			}
-		}
-	}
-}*/
+.home section ul {
+  margin-top: 40px;
+}
+.home .wrapper:first-child {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  background-color: #1B1BFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.home .wrapper:first-child .header {
+  text-align: left;
+  max-width: 840px;
+  margin: 0 auto;
+  color: #EAEEF0;
+  margin-bottom: 40px;
+  padding: 0 50px;
+}
+.home .wrapper:first-child .header p a {
+  color: #EAEEF0;
+}
+.home .wrapper:first-child .header p abbr[title] {
+  border-bottom: 1px dashed rgba(234, 238, 240, 0.25);
+}
+.home .wrapper:first-child .header .scroll-indicator {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translate(-50%, 0px);
+  display: block;
+  height: 60px;
+  width: 60px;
+  animation: scroll 3s infinite;
+  color: #ffffff;
+  font-size: 2.2em;
+  text-align: center;
+  line-height: 1.8em;
+  opacity: .4;
+  transition: opacity .5s ease;
+}
+.home .wrapper:first-child .header .scroll-indicator:hover {
+  opacity: 1;
+}
 .motion .img-full {
   background-color: #6254e7;
 }

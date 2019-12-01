@@ -76,28 +76,37 @@ body {
   margin: 16px 2px 2px 2px;
 }
 @media (min-width: 1120px) {
-  .wrapper nav:hover {
+  .wrapper nav:hover,
+  .wrapper nav.focus {
     background-color: #EAEEF0;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15);
   }
   .wrapper nav:hover p,
-  .wrapper nav:hover h3 {
+  .wrapper nav.focus p,
+  .wrapper nav:hover h3,
+  .wrapper nav.focus h3 {
     color: #2F3E4A;
     opacity: .8;
     background-image: none;
     letter-spacing: 0px;
   }
   .wrapper nav:hover p a,
-  .wrapper nav:hover h3 a {
+  .wrapper nav.focus p a,
+  .wrapper nav:hover h3 a,
+  .wrapper nav.focus h3 a {
     color: #2F3E4A;
   }
   .wrapper nav:hover p a.active,
-  .wrapper nav:hover h3 a.active {
+  .wrapper nav.focus p a.active,
+  .wrapper nav:hover h3 a.active,
+  .wrapper nav.focus h3 a.active {
     color: #1B1BFF;
     font-weight: bold;
   }
   .wrapper nav:hover p a:hover,
-  .wrapper nav:hover h3 a:hover {
+  .wrapper nav.focus p a:hover,
+  .wrapper nav:hover h3 a:hover,
+  .wrapper nav.focus h3 a:hover {
     color: #1B1BFF;
   }
 }

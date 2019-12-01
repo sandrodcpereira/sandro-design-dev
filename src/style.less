@@ -89,9 +89,12 @@ html, body {
 				margin: 16px 2px 2px 2px;
 			}
     	}
+
+
 			
 		@media (min-width: 1120px) {
-			&:hover {	
+			
+			&:hover, &.focus {	
 
 				background-color: @light-grey;
 				box-shadow: 0 14px 28px rgba(0,0,0,0.15);
@@ -124,7 +127,9 @@ html, body {
 			transition: left .2s ease-out;
 			font-size: .6em;
 
-			&.open {left: 0;}
+			&.open {
+				left: 0;
+			}
 
 			.nav-container {
 				display: block;

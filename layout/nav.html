@@ -93,7 +93,12 @@ $(function(){
 $(function(){
 	$('nav a').focus(function(){
 		console.log('hello you');
-		$('nav').addClass("open");
+		$('nav').addClass("focus");
+	});
+
+	$('nav a').focusout(function(){
+		console.log('hello you');
+		$('nav').removeClass("focus");
 	});
 });
 

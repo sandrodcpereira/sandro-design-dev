@@ -11,34 +11,20 @@ $(function(){
 $(function(){
 	$('.play-trigger').click(function(){
 		$(this).fadeOut();
+		$('video').get(0).play();
+	});
+
+	$('video').on('ended',function(){
+		$('.play-trigger').fadeIn();
 	});
 });
 
-// video play on hover
+// open menu on focus
 
-/*
-$('video').mouseover(function(){
-	$(this).get(0).play();
-	$('.video-helper').addClass('playing');
+$(function(){
+	$('nav a').focus(function(){
+		console.log('hello you');
+		$('nav').mouseenter().mouseleave();
+	});
 });
 
-$('video').mouseout(function(){
-	$(this).get(0).pause();
-	$('.video-helper').removeClass('playing');
-});
-
-
-// video play on click, for mobile
-
-
-$('video').click(function(){
-	$(this).get(0).play();
-	$('.video-helper').addClass('playing');
-});
-
-$('video').click(function(){
-	$(this).get(0).pause();
-	$('.video-helper').removeClass('playing');
-});
-
-*/

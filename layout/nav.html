@@ -88,4 +88,15 @@ $(function(){
 	});
 });
 
+// open on focus
+
+$(function(){
+	$('nav a').focus(function(){
+		console.log('hello you');
+		$('nav').addClass("open");
+	});
+});
+
+
+
 </script>

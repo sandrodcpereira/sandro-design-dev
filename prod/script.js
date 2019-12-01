@@ -18,13 +18,3 @@ $(function(){
 		$('.play-trigger').fadeIn();
 	});
 });
-
-// open menu on focus
-
-$(function(){
-	$('nav a').focus(function(){
-		console.log('hello you');
-		$('nav').mouseenter().mouseleave();
-	});
-});
-

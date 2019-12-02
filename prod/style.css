@@ -7,6 +7,7 @@ html {
 }
 html,
 body {
+  font-size: 16px;
   width: 100%;
   font-family: "azo-sans-web", 'Azo Sans', sans-serif;
   background-color: #EAEEF0;
@@ -193,7 +194,7 @@ h1 {
 }
 @media (max-width: 1023px) {
   h1 {
-    font-size: 2.6em;
+    font-size: 2.2em;
   }
 }
 h2 {
@@ -202,12 +203,12 @@ h2 {
 }
 @media (max-width: 1023px) {
   h2 {
-    font-size: 2em;
+    font-size: 1.6em;
   }
 }
 h3 {
   font-size: 1.6em;
-  line-height: 1.4em;
+  line-height: 1.2em;
 }
 h4 {
   font-size: .8em;
@@ -525,6 +526,9 @@ ul.improvements > li:before {
   justify-content: center;
   align-items: center;
   position: relative;
+  background-image: url('../assets/generic/bg.png');
+  background-size: cover;
+  background-position: center center;
 }
 .home .wrapper:first-child .header {
   text-align: left;
@@ -533,6 +537,12 @@ ul.improvements > li:before {
   color: #EAEEF0;
   margin-bottom: 40px;
   padding: 0 50px;
+}
+@media (max-width: 800px) {
+  .home .wrapper:first-child .header {
+    padding: 0;
+    margin-bottom: 0;
+  }
 }
 .home .wrapper:first-child .header p a {
   color: #EAEEF0;
@@ -558,6 +568,11 @@ ul.improvements > li:before {
 }
 .home .wrapper:first-child .header .scroll-indicator:hover {
   opacity: 1;
+}
+@media (max-width: 500px) {
+  .home .wrapper:first-child .header .scroll-indicator {
+    bottom: 20px;
+  }
 }
 .motion .img-full {
   background-color: #6254e7;
@@ -615,6 +630,17 @@ ul.improvements > li:before {
   margin: 40px 80px 20px auto;
   border-radius: 8px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 1023px) {
+  .row {
+    flex-direction: column;
+    margin: 60px 0;
+  }
+  .row > .video-container,
+  .row > img,
+  .row > .frame-container {
+    margin: 20px auto;
+  }
 }
 .video-container,
 .frame-container {
@@ -698,13 +724,4 @@ ul.improvements > li:before {
 }
 .frame-container > iframe[name="prototypeUserFeedback"] {
   background-image: url('../assets/akkroo/preview-feedback.png');
-}
-@media (max-width: 1023px) {
-  flex-direction: column;
-  margin: 60px 0;
-   > .video-container,
-   > img,
-   > .frame-container {
-    margin: 20px auto;
-  }
 }

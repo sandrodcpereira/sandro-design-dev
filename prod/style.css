@@ -687,8 +687,7 @@ ul.improvements > li:before {
 }
 .video-container {
   width: 100%;
-  max-width: 640px;
-  margin: 40px auto 20px auto;
+  margin: 80px auto 20px auto;
 }
 .video-container > video {
   display: block;
@@ -696,9 +695,11 @@ ul.improvements > li:before {
   border-radius: 8px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15);
   pointer-events: none;
+  padding-top: 40px;
 }
 .video-container > video.no-shadow {
   box-shadow: none;
+  border-radius: 0;
 }
 .frame-container {
   width: 100%;

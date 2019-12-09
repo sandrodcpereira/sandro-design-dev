@@ -43,7 +43,10 @@
 
 				<p>One of the biggest issues app users encountered when using our app was the perception of having lost data when an action was performed incorrectly — maybe they scanned the wrong QR code in an event badge, or their marketing manager forgot to correctly set up an integration with the badge provider. On both of those instances, the scan would not return any data, thus “losing” the lead and the opportunity for our sales user.</p>	
 
-				<p>These scenarios could be classified as user errors, but the user perception was that the Akkroo app had failed to retrieve the badge data, resulting in anxiety and lack of confidence in the product. </p>
+				<p>While those scenarios could be classified as user errors, the user perception was that it was the Akkroo app that had failed to retrieve the badge data, resulting in anxiety and lack of confidence in the product. </p>
+
+				<p class="info">Badge scanning in Akkroo and similar apps works by scanning a badge, which typically returns a string. These strings are then sent to the badge provider <abbr title="Application Program Interface">API</abbr> to be "exchanged" for the data contained in the badge.</p>
+
 
 			</section>
 
@@ -51,7 +54,7 @@
 				
 				<h2>Problem</h2>
 
-				<p>We framed this project around the user persona of the Sales Representative, who is the typical user of the Akkroo app.</p> 
+				<p>We framed this project around the user persona of the Sales Representative — who we named Serena Sales —, the typical user of the Akkroo app.</p> 
 
 				<p>Using the <a href="https://www.intercom.com/books/jobs-to-be-done" target="_blank">Jobs to Be Done</a> framework, we arrived at the following goal:</p>
 
@@ -73,9 +76,11 @@
 					<div class="text">
 						<h3>1. There is a badge provider integration in place</h3>
 
-						<p>By warning users when there is no integration in place, we can manage their expectations by letting them know we won’t be able to retrieve data from badges, thus giving them the option to address this if this is not intended.</p>
+						<p>By warning users when there is no integration in place, we can manage their expectations by letting them know the app will not be able to retrieve data from badges.</p>
 
-						<p class="info">Scanning badges without an integration is an existing, albeit rare, use case, meaning that we still needed to allow users to do it in those scenarios.</p>
+						<p>This gives them the opportunity to either rectify the mistake (in case someone forgot to set up the integration) or make up for the loss of immediate data by collecting additional information.</p>
+
+						<!--p class="info">Scanning badges without an integration is an existing, albeit rare, use case, meaning that we still needed to allow users to do it in those scenarios.</p-->
 
 					</div>
 
@@ -106,6 +111,8 @@
 						<p>When using the scanner in the app, we employ real-time validation to assure the user that they are scanning the right kind of code and that the string retrieved is in the expected format.</p>
 
 						<p>This helps us avoid scenarios in which the wrong badges are scanned, leaving Akkroo with no way to retrieve data for that lead.</p>
+
+						<p class="info">Play the video to see the validation in action.</p>
 					</div>
 
 				</div>
@@ -118,7 +125,9 @@
 					<div class="text">
 						<h3>3. The badge contains data</h3>
 
-						<p>By returning the badge data in real-time, we eliminate the users’ anxiety of wondering whether the badge contained real data or not. By surfacing the information immediately, the users can confirm they scanned the correct badge, that it contained information, and even make additions or corrections.</p>
+						<p>By returning the badge data in real-time, we eliminate the users’ anxiety of wondering whether the badge contained real data or not.</p>
+
+						<p>By surfacing the information immediately, the users can confirm they scanned the correct badge, that it contained information, and even make additions or corrections.</p>
 					</div>
 
 				</div>
@@ -130,7 +139,7 @@
 					<div class="text">
 						<h3>Bonus: NFC badge support</h3>
 
-						<p>In addition to these improvements, we’ve also added the ability to scan <abbr title="Near-Field Communication">NFC</abbr> badges, a much requested feature, by plugging it into our existing badge data infrastructure.</p>
+						<p>In addition to improvements above, we’ve also added the ability to scan <abbr title="Near-Field Communication">NFC</abbr> badges, a much requested feature, by plugging it into our existing badge data infrastructure.</p>
 					</div>
 
 				</div>
@@ -145,7 +154,7 @@
 
 				<p>This project is a great example of how you can supercharge a feature just by focusing on the possible points of failure and making sure to design for when those happen.</p>
 
-				<p>By doing so, you’re assuring the user that you got their backs and that they can trust your product to be an ally and prevent them from making mistakes.</p>
+				<p>By doing so, we can build a relationship of trust with our users: they know that our product will let them know if anything goes wrong, giving them the chance to rectify their mistakes and giving them the peace of mind to focus on the task at hand.</p>
 
 				<p><b>Value added:</b></p>
 

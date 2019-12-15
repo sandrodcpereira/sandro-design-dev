@@ -1,3 +1,9 @@
+/*
+warning 	f071
+info		f05a
+quesrtion	f059
+pointer		f25a
+*/
 html {
   scroll-behavior: smooth;
   text-rendering: optimizeLegibility;
@@ -225,14 +231,22 @@ hr {
   border: 1px solid #638096;
   opacity: 0.1;
 }
-p.info {
-  font-size: 1em;
+.info {
   padding: 15px 25px 15px 52px;
   border-radius: 6px;
   background-color: rgba(27, 27, 255, 0.05);
   position: relative;
 }
-p.info:before {
+.info > p {
+  font-size: 1em;
+}
+.info > p:first-child {
+  margin-top: 0;
+}
+.info > p:last-child {
+  margin-bottom: 0;
+}
+.info:before {
   font-family: "Font Awesome 5 Pro";
   font-weight: 900;
   content: "\f05a";
@@ -244,30 +258,14 @@ p.info:before {
   font-variant: normal;
   text-rendering: auto;
   position: absolute;
-  top: 15px;
+  top: 19px;
   left: 22px;
 }
-p.prototype-instructions {
-  font-size: 1em;
-  padding: 15px 25px 15px 52px;
-  border-radius: 6px;
-  background-color: rgba(27, 27, 255, 0.05);
-  position: relative;
-}
-p.prototype-instructions:before {
-  font-family: "Font Awesome 5 Pro";
-  font-weight: 900;
+.info.prototype:before {
   content: "\f25a";
-  opacity: 1;
-  color: #638096;
-  font-size: 1.2em;
-  -webkit-font-smoothing: antialiased;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  position: absolute;
-  top: 15px;
-  left: 22px;
+}
+.info.video:before {
+  content: "\f04b";
 }
 img {
   width: 100%;
@@ -618,6 +616,9 @@ ul.improvements > li:before {
 .row > .video-container {
   max-width: 320px;
   margin: 40px 80px 20px auto;
+}
+.row > .video-container > video {
+  padding-top: 0px;
 }
 .row .text {
   width: 460px;

@@ -14,7 +14,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script src="prod/script.js"></script>
 
-	<title>Badge Scanning Improvements in the Akkroo App — Sandro Pereira</title>	
+	<title>Badge Scanning Improvements in the Akkroo App — Sandro Pereira</title>
 
 </head>
 <body>
@@ -41,20 +41,21 @@
 
 				<p>After the launch of the new <a href="akkroo-react-native-app.html">Akkroo app built on React Native</a>, there was a big focus on improving existing features and providing a more seamless experience for our app users. One piece of functionality that was severely improved was the badge scanner.</p>
 
-				<p>One of the biggest issues app users encountered when using our app was the perception of having lost data when an action was performed incorrectly — maybe they scanned the wrong QR code in an event badge, or their marketing manager forgot to correctly set up an integration with the badge provider. On both of those instances, the scan would not return any data, thus “losing” the lead and the opportunity for our sales user.</p>	
+				<p>One of the biggest issues app users encountered when using our app was the perception of having lost data when an action was performed incorrectly — maybe they scanned the wrong QR code in an event badge, or their marketing manager forgot to correctly set up an integration with the badge provider. On both of those instances, the scan would not return any data, thus “losing” the lead and the opportunity for our sales user.</p>
 
 				<p>While those scenarios could be classified as user errors, the user perception was that it was the Akkroo app that had failed to retrieve the badge data, resulting in anxiety and lack of confidence in the product. </p>
 
-				<p class="info">Badge scanning in Akkroo and similar apps works by scanning a badge, which typically returns a string. These strings are then sent to the badge provider <abbr title="Application Program Interface">API</abbr> to be "exchanged" for the data contained in the badge.</p>
-
+				<div class="info">
+					<p>Badge scanning in Akkroo and similar apps works by scanning a badge, which typically returns a string. These strings are then sent to the badge provider <abbr title="Application Program Interface">API</abbr> to be "exchanged" for the data contained in the badge.</p>
+				</div>
 
 			</section>
 
 			<section>
-				
+
 				<h2>Problem</h2>
 
-				<p>We framed this project around the user persona of the Sales Representative — who we named Serena Sales —, the typical user of the Akkroo app.</p> 
+				<p>We framed this project around the user persona of the Sales Representative — who we named Serena Sales —, the typical user of the Akkroo app.</p>
 
 				<p>Using the <a href="https://www.intercom.com/books/jobs-to-be-done" target="_blank">Jobs to Be Done</a> framework, we arrived at the following goal:</p>
 
@@ -63,7 +64,7 @@
 			</section>
 
 			<section>
-				
+
 				<h2>Discovery and ideation</h2>
 
 				<p>We tackled this challenge by implementing three different solutions that, in the end, provided peace of mind to our users by assuring them that:</p>
@@ -87,10 +88,10 @@
 
 				</div>
 
-				
+
 
 				<div class="row">
-					
+
 
 					<div class="video-container">
 						<div class="helper">
@@ -112,14 +113,17 @@
 
 						<p>This helps us avoid scenarios in which the wrong badges are scanned, leaving Akkroo with no way to retrieve data for that lead.</p>
 
-						<p class="info">Play the video to see the validation in action.</p>
+						<div class="info video">
+							<p>Play the video to see the validation in action.</p>
+						</div>
+
 					</div>
 
 				</div>
 
 
 				<div class="row">
-					
+
 					<img src="assets/akkroo/ui-badge-3.png" alt="The badge scanning UI in the Akkroo app showing data retrieved from a badge">
 
 					<div class="text">
@@ -148,7 +152,7 @@
 
 
 			</section>
-			
+
 			<section>
 				<h2>Outcome</h2>
 
@@ -168,7 +172,7 @@
 
 
 				</ul>
-				
+
 			</section>
 		</main>
 

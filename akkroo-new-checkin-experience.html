@@ -67,8 +67,6 @@
 
 				<p>The existing experience, having been added years prior to cater to a <abbr title="Business to Customer">B2C</abbr> use case, was neither intuitive nor fast and caused a lot of frustration to our users on the show floor. Despite this, some our <abbr title="Business to Business">B2C</abbr> customers did find value in the ability to leverage pre-existing lead information, so we decided to revamp the functionality instead of scrapping it.</p>
 
-
-
 			</section>
 
 			<section>
@@ -89,26 +87,18 @@
 
 				<p>Our main goal was to completely rethink the user flow for these types of events — it needed not just to work for any customers already usign the functionality, but also to provide enough value to get others to give it a try in favour of the basic lead capture type of event.</p>
 
-				<!--p class="info">At this time, check-in type events hovered around 10% of all events in Akkroo, with basic lead capture type making up the remaining 90%.</p-->
-
 				<p>We also knew from the beginning of this project could potentially power the future of the Akkroo app. The user flow to lookup attendees could later be reused to allow our users to tap into their <abbr title="Customer Relationship Management">CRM</abbr> and <abbr title="Marketing Automation">MA</abbr> databases — or potentially any other source.</p>
 
-				<p>When looking at the user flow, we aimed to remove points of stress for the user — instances where they were forced to make a decision despite not having the information required to do so.</p>
+				<p>Looking at the old user flow, we easily flagged the two forks as being the biggest issues: they caused frustration by splitting the flow in two distinct and conflicting experiences, and asked users to make decisions without providing the information required for them to act with confidence.</p>
+
+				<img src="assets/akkroo/flow-checkin-old.png" alt="A representation of the old user flow.">
+				<figcaption>A simplified representation of the old user flow.</figcaption>
 
 				<div class="info">
-					<p>The <b>"is lead in guest list?"</b> fork in the user flow below was one of the biggest sources of frustration for our users. Were users expected to memorise every single name in the list of attendees?</p>
+					<p>The <b>"is lead in guest list?"</b> fork, for instance, was one of the biggest sources of frustration for our users. Were users expected to memorise every single name in the list of attendees?</p>
 				</div>
 
-				<img src="assets/akkroo/flow-checkin.png" alt="A comparison between the old user flow and the new one. The new one is quite an improvement, obviously.">
-				<figcaption>A simplified look at the improvements to the user flow.</figcaption>
-
-				<!--p>Handling whether you can or need to collect more information about the lead you're engaging with was also looked at. We introduced a smarter way to guide the user through the appropriate action in a seamless way by only showing them the actions they can perform.</p-->
-
-				<p>Here's how we steamlined both forks in the initial user flow to arrive at the revamped one:</p>
-
-				<!--p>One of these instances, for example, was when the app asked the users whether the person they were speaking to was on the list of attendees.</p>
-
-				<p>Users found this stressful — they obviously couldn't remember the complete list of people uploaded to the app. In the end, they either just ignored the list of attendees and logged every conversation as a brand new lead, or wasted their precious time checking the gueslist every time they had a conversation with a prospect.</p-->
+				<p>Focusing on those two spots, we revamped the user flow in order to provide an experience that is less confusing and more empowering. Here's the changes we made:</p>
 
 				<div class="row">
 
@@ -118,13 +108,9 @@
 
 						<h3><i class="fas fork fa-square"></i> Is lead in guestlist?</h3>
 
-						<!--p>After many iterations, the solution we presented was to have the user type the name (or email) of the person they’re speaking to and then present them the relevant action: create a new lead if the name is not on the list, show them the existing profile if it is.</p>
+						<p>Our solution to fix this stress point was to remove the need for it comepletely. In its place, we designed an interface that can accomodate for both new contacts and contacts in the attendee list.</p>
 
-						<p>By presenting these prompts in a smart way, we're helping the user do their job without getting in the way.</p-->
-
-						<p>Our solution to remove this stress point was to remove the need for it comepletely. In its place, we designed an interface that can accomodate for both new contacts and contacts in the attendee list.</p>
-
-						<p>By nudging the user towards the searching functionality, we can present them either and existing record of the lead they're speaking to, or give them the option to create a new one that will prefill the name (or email address) with the search query, saving them time.</p>
+						<p>By nudging the user towards the searching functionality, we can present them either an existing record of the lead they're speaking to, or give them the option to create a new one that will prefill the name (or email address) with the search query, saving them time.</p>
 					</div>
 
 				</div>
@@ -138,19 +124,20 @@
 
 						<h3><i class="fas fork fa-square"></i> More info available?</h3>
 
-						<!--p>The same applies to the actions you can perform with your attendees.</p>
+						<p>Here, we reworked the interface to make sure we don't overload our users with unecessary decisions during a busy and stressful event.</p>
 
-						<p>If, for instance, the user is required to collect additional data before they’re able to check a lead in, they’re only presented with the option to proceed to the data collection form. </p-->
+						<p>If the user needs to collect any information in order to perform a check-in, they'll be taken to the collection form so that they can do it easily.</p>
 
-						<p>In a similar vein, we reworked this fork to make sure that we don't overload our users with unecessary decisions during a busy and stressful event.</p>
-
-						<p>For instance, if the user needs to collect some piece of information that is required in order to perform a check-in, they'll be taken to the collection form to provide that information.</p>
-
-						<p>On the other hand, if they have all the required information, they can check-in easily and quickly, but thet can also navigate to the collection form to note down any additional (and optional) information they may have acquired.</p>
+						<p>If they do have all the required information, they can quickly check-in and move on to the next lead (or collect optional information they may have gathered).</p>
 
 					</div>
 
 				</div>
+
+				<p>After these changes were introduced, we ended up with a user flow that looked a lot simpler and was easier for our users to understand:</p>
+
+				<img src="assets/akkroo/flow-checkin-new.png" alt="A representation of the new user flow.">
+				<figcaption>A simplified representation of the new user flow.</figcaption>
 
 			</section>
 

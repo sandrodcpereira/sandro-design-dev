@@ -307,7 +307,10 @@ img.border {
 .fas.fork.fa-square {
   transform: rotate(45deg);
   color: #0089CB;
-  margin-right: 10px;
+  margin: 0 5px;
+}
+h3 .fas.fork.fa-square {
+  margin: 0 10px 0 0;
 }
 figcaption {
   display: block;
